@@ -3,7 +3,7 @@ const http = require('http');
 
 const server = http.createServer(
     (request, result) => {
-        const file = fs.createReadStream('./hello.html');
+        const file = fs.createReadStream('./myblog.txt');
         file.pipe(result);
     }
 );
