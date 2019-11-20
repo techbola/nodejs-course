@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add": "node add-post",
+    "view": "node view-posts",
+    "setup": "node setup"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^1.19.4"
+    "chalk": "^3.0.0",
+    "inquirer": "^7.0.0",
+    "nodemon": "^1.19.4",
+    "sqlite3": "^4.1.0"
   }
 }
