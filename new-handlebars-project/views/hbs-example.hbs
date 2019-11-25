@@ -1,9 +1,9 @@
-{{#showTitle}}
+{{#if showTitle}}
     {{{title}}}
 {{else}}
     <h1>No title given</h1>
-{{/showTitle}}
+{{/if}}
 
 {{#each data}}
-    <li>{{title}}</li>
+    <li>{{this}}</li>
 {{/each}}

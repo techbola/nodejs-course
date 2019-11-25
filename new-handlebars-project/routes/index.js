@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
 router.get('/hbs', (req, res, next) => {
   res.render('hbs-example', {
     title: '<h1>Example HBS Template</h1>',
-    showTitle: false,
-    data: [ 'apples', 'oranges', 'pears', 'kiwi' ]
+    showTitle: true,
+    data: ['apples', 'oranges', 'pears', 'kiwi']
   });
 });
 

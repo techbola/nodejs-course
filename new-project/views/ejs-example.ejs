@@ -1,9 +1,11 @@
-<% if (showTitle) { %> 
-    <%- title %>
-<% } else { %> 
-    <h1>No title given</h1>
-<% } %> 
+<% include ./header %>
+    <% if (showTitle) { %> 
+        <%- title %>
+    <% } else { %> 
+        <h1>No title given</h1>
+    <% } %> 
 
-<% for (let i = 0; i<data.length; i++) { %> 
-    <li><%= data[i] %></li>
-<% } %> 
+    <% for (let i = 0; i<data.length; i++) { %> 
+        <li><%= data[i] %></li>
+    <% } %>
+<% include ./footer %>
